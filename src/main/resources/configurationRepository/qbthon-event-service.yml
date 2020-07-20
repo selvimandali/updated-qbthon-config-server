@@ -1,0 +1,24 @@
+server:
+     port: 9001
+     servlet: 
+      contextPath: /event
+amazon:  
+  access:
+    key: fakeAccessKeyId
+    secret-key: fakeSecretAccessKey
+  end-point: 
+    url: http://localhost:8000/
+email:
+  url: http://localhost:8071
+spring:
+  data:
+    dynamodb:
+      entity2ddl:
+        auto: create-only
+        gsiProjectionType: ALL
+        readCapacity: 10
+        writeCapacity: 1
+core:
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin, Va
+
+  
